@@ -3,12 +3,12 @@ import "./App.css";
 
 const resumeUrl = process.env.PUBLIC_URL + "/Avinash_Resume.pdf";
 
-const socialLinks = [
-  { href: "https://www.linkedin.com/in/avinash-reddy-rakki-reddy-30a052224/", icon: "fab fa-linkedin" },
-  { href: "mailto:avinashrakkireddy17@gmail.com", icon: "fas fa-envelope" },
-  { href: "https://github.com/a-rakkireddy", icon: "fab fa-github" },
-  { href: "https://codeforces.com/profile/avinashreddy17", icon: "fas fa-code" },
-  { href: "https://www.codechef.com/users/avinashreddy17", icon: "fas fa-star" },
+const footerLinks = [
+  { href: "https://github.com/a-rakkireddy", text: "GitHub" },
+  { href: "https://codeforces.com/profile/avinashreddy17", text: "CodeForces" },
+  { href: "https://www.codechef.com/users/avinashreddy17", text: "CodeChef" },
+  { href: "https://www.linkedin.com/in/avinash-reddy-rakki-reddy-30a052224/", text: "LinkedIn" },
+  { href: "mailto:avinashrakkireddy17@gmail.com", text: "Email" }
 ];
 
 function App() {
@@ -26,13 +26,6 @@ function App() {
           <a href="#contact" className="nav-link">Contact</a>
           <a href={resumeUrl} download className="nav-link resume-link">Resume <i className="fas fa-download"></i></a>
         </nav>
-        <div className="socials">
-          {socialLinks.map((s, i) => (
-            <a key={i} href={s.href} target="_blank" rel="noopener noreferrer">
-              <i className={s.icon}></i>
-            </a>
-          ))}
-        </div>
       </header>
 
       {/* Hero Section */}
@@ -119,30 +112,25 @@ function App() {
       {/* Projects */}
       <section id="projects" className="section">
         <h2>Projects</h2>
-        <div className="project-card">
-          <h3>BrewHub <a href="#" className="neon-btn-sm">Repo-Link</a></h3>
-          <ul>
-            <li>Crafted a responsive web interface using Bootstrap, built <b>RESTful APIs</b> with Express and Node.js for efficient CRUD operations, integrating MongoDB for reliable data storage and showcasing expertise in <b>NoSQL DB</b>.</li>
-            <li>Leveraged Passport.js for secure user authentication and implemented access control based on their roles.</li>
-            <li>Enhanced operational efficiency for owners, improved customer satisfaction by streamlining the ordering process.</li>
-          </ul>
-        </div>
-        <div className="project-card">
-          <h3>Hotel Booking Website <a href="#" className="neon-btn-sm">Repo-Link</a></h3>
-          <ul>
-            <li>Created a comprehensive online hotel booking platform to streamline and improve the reservation process.</li>
-            <li>Created a responsive UI with React and Material UI, utilizing hooks and context API for dynamic interactions.</li>
-            <li>Built a Node.js backend with asynchronous programming, integrating Mapbox for <b>interactive maps, geocoding</b>.</li>
-            <li>Created Express.js RESTful APIs to link a React frontend and MongoDB, optimizing data handling.</li>
-          </ul>
-        </div>
-        <div className="project-card">
-          <h3>Instant Dictionary Chrome Extension <a href="#" className="neon-btn-sm">Repo-Link</a></h3>
-          <ul>
-            <li>Developed a Chrome extension to enhance reading by instantly showing word definitions in a pop-up.</li>
-            <li>Utilized JavaScript, HTML, and CSS to build a responsive UI triggered on word selection.</li>
-            <li>Integrated an internal API with the <b>Oxford Dictionary API</b> to fetch and display word meanings efficiently.</li>
-          </ul>
+        <div className="projects-grid">
+          <div className="project-card">
+            <img src={process.env.PUBLIC_URL + '/brewhub.png'} alt="BrewHub Project" className="project-image"/>
+            <h3>BrewHub</h3>
+            <p className="project-summary">A restaurant management system for real-time order tracking and inventory, built with Node.js, Express, and MongoDB.</p>
+            <a href="#" className="project-link" target="_blank" rel="noopener noreferrer">View Repository</a>
+          </div>
+          <div className="project-card">
+            <img src={process.env.PUBLIC_URL + '/hotel.png'} alt="Hotel Booking Website Project" className="project-image"/>
+            <h3>Hotel Booking Website</h3>
+            <p className="project-summary">A modern hotel booking platform with interactive maps and real-time availability, using React, Node.js, and Mapbox.</p>
+            <a href="#" className="project-link" target="_blank" rel="noopener noreferrer">View Repository</a>
+          </div>
+          <div className="project-card">
+            <img src={process.env.PUBLIC_URL + '/dictionary.png'} alt="Instant Dictionary Extension Project" className="project-image"/>
+            <h3>Instant Dictionary Chrome Extension</h3>
+            <p className="project-summary">A browser extension for instant word definitions in a popup, using JavaScript and the Oxford Dictionary API.</p>
+            <a href="#" className="project-link" target="_blank" rel="noopener noreferrer">View Repository</a>
+          </div>
         </div>
       </section>
 
@@ -164,7 +152,26 @@ function App() {
         <p>LinkedIn: <a href="https://www.linkedin.com/in/avinash-reddy-rakki-reddy-30a052224/" target="_blank" rel="noopener noreferrer">Profile</a></p>
       </section>
 
-      <footer className="footer">© {new Date().getFullYear()} Avinash Reddy Rakkireddy</footer>
+      <footer className="footer">
+        <div className="footer-links">
+          {footerLinks.map((link, index) => (
+            <React.Fragment key={index}>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
+                {link.text}
+              </a>
+              {index < footerLinks.length - 1 && <span className="footer-separator">•</span>}
+            </React.Fragment>
+          ))}
+        </div>
+        <div className="copyright">
+          © {new Date().getFullYear()} Avinash Reddy Rakkireddy
+        </div>
+      </footer>
     </div>
   );
 }
