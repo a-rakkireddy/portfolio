@@ -5,9 +5,9 @@ html {
 /* General Dark Theme */
 body, .app-bg {
   background: #000;
-  color: #fff8f0;
+  color: #fff;
   min-height: 100vh;
-  font-family: 'Raleway', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -36,7 +36,7 @@ body, .app-bg {
   font-size: 2.2rem;
   font-weight: 900;
   letter-spacing: 2px;
-  color: #4fd1c5;
+  color: #8249d1;
   text-shadow: none;
 }
 
@@ -47,7 +47,7 @@ body, .app-bg {
 }
 
 .nav-link {
-  color: #b8c1ec;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -59,24 +59,24 @@ body, .app-bg {
 }
 
 .nav-link:hover {
-  color: #4fd1c5;
+  color: #fff;
   text-shadow: none;
-  background: rgba(79, 209, 197, 0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .resume-link {
-  color: #5f5fff;
-  border: 1px solid #5f5fff;
+  color: #fff;
+  border: 1px solid #fff;
   padding: 6px 16px;
   margin-left: 8px;
   box-shadow: none;
 }
 
 .resume-link:hover {
-  color: #5f5fff;
+  color: #fff;
   text-shadow: none;
   box-shadow: none;
-  background: rgba(95, 95, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .resume-link i {
@@ -124,10 +124,10 @@ body, .app-bg {
 /* Animated Neon Glow */
 @keyframes neonPulse {
   0%, 100% {
-    box-shadow: 0 0 8px #00fff0, 0 0 24px #00fff0, 0 0 40px #ff00ea;
+    box-shadow: 0 0 8px #8249d1;
   }
   50% {
-    box-shadow: 0 0 24px #00fff0, 0 0 48px #ff00ea, 0 0 80px #00fff0;
+    box-shadow: 0 0 16px #8249d1;
   }
 }
 
@@ -144,7 +144,7 @@ body, .app-bg {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
-  box-shadow: 0 0 8px #00fff0, 0 0 24px #00fff0, 0 0 40px #ff00ea;
+  box-shadow: 0 0 8px #8249d1;
   transition: box-shadow 0.3s, background 0.3s, color 0.3s;
   position: relative;
   overflow: hidden;
@@ -154,9 +154,9 @@ body, .app-bg {
 }
 
 .neon-btn:hover {
-  background: #00fff0;
-  color: #181924;
-  box-shadow: 0 0 24px #00fff0, 0 0 48px #ff00ea, 0 0 80px #00fff0;
+  background: #8249d1;
+  color: #fff;
+  box-shadow: 0 0 16px #8249d1;
 }
 
 /* Small Neon Button */
@@ -173,7 +173,7 @@ body, .app-bg {
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: 0 0 6px #00fff0, 0 0 16px #ff00ea;
+  box-shadow: 0 0 6px #8249d1;
   transition: box-shadow 0.3s, background 0.3s, color 0.3s;
   position: relative;
   z-index: 1;
@@ -182,9 +182,9 @@ body, .app-bg {
 }
 
 .neon-btn-sm:hover {
-  background: #ff00ea;
+  background: #8249d1;
   color: #fff;
-  box-shadow: 0 0 16px #ff00ea, 0 0 32px #00fff0;
+  box-shadow: 0 0 12px #8249d1;
 }
 
 /* Section Styles */
@@ -208,7 +208,7 @@ body, .app-bg {
   width: 120px;
   height: 4px;
   border-radius: 2px;
-  background: #4fd1c5;
+  background: #8249d1;
   box-shadow: none;
   opacity: 0.7;
 }
@@ -218,18 +218,22 @@ body, .app-bg {
 }
 
 .section h2 {
-  color: #4fd1c5;
+  color: #8249d1;
   font-size: 2rem;
   margin-bottom: 18px;
   letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 .section h3, .about-heading {
-  color: #5f5fff;
+  color: #8249d1;
+  font-family: 'Inter', sans-serif;
 }
 
 .section h4, .about-typed-static {
-  color: #b8c1ec;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 .skills-list div {
@@ -249,28 +253,30 @@ body, .app-bg {
 
 .exp-card:hover, .project-card:hover {
   transform: translateY(-8px) scale(1.025);
-  box-shadow: 0 0 32px #00fff0, 0 0 48px #ff00ea;
+  box-shadow: 0 0 8px rgba(130, 73, 209, 0.4);
   z-index: 2;
 }
 
 .exp-card h3, .project-card h3 {
-  color: #ff00ea;
+  color: #8249d1;
   font-size: 1.18rem;
   margin-bottom: 8px;
   font-weight: 700;
+  font-family: 'Inter', sans-serif;
 }
 
 .exp-card h3 span {
-  color: #00fff0;
+  color: #aaa;
   font-size: 1rem;
   font-weight: 400;
   margin-left: 10px;
 }
 
 .exp-card h4 {
-  color: #00fff0;
+  color: #8249d1;
   margin-top: 10px;
   font-size: 1.05rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .exp-card ul, .project-card ul {
@@ -292,7 +298,7 @@ body, .app-bg {
 
 .achievements-card:hover {
   transform: translateY(-8px) scale(1.025);
-  box-shadow: 0 0 32px #00fff0, 0 0 48px #ff00ea;
+  box-shadow: 0 0 8px rgba(130, 73, 209, 0.4);
   z-index: 2;
 }
 
@@ -305,12 +311,12 @@ body, .app-bg {
 
 /* Contact */
 #contact a {
-  color: #00fff0;
+  color: #fff;
   text-decoration: underline;
 }
 
 #contact a:hover {
-  color: #ff00ea;
+  color: #ccc;
 }
 
 /* Footer */
@@ -331,7 +337,7 @@ body, .app-bg {
 }
 
 .footer-link {
-  color: #b8c1ec;
+  color: #fff;
   text-decoration: underline;
   font-size: 1.1rem;
   transition: all 0.3s ease;
@@ -340,7 +346,7 @@ body, .app-bg {
 }
 
 .footer-link:hover {
-  color: #4fd1c5;
+  color: #8249d1;
   text-shadow: none;
 }
 
@@ -381,7 +387,7 @@ body, .app-bg {
 
 .about-card:hover {
   transform: translateY(-8px) scale(1.025);
-  box-shadow: 0 0 32px #00fff0, 0 0 48px #ff00ea;
+  box-shadow: 0 0 8px rgba(130, 73, 209, 0.4);
   z-index: 2;
 }
 
@@ -400,8 +406,8 @@ body, .app-bg {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
-  border: 2px solid #00fff0;
-  box-shadow: 0 0 12px #00fff033;
+  border: 2px solid #8249d1;
+  box-shadow: 0 0 12px rgba(130, 73, 209, 0.2);
 }
 
 .about-text {
@@ -426,7 +432,7 @@ body, .app-bg {
 
 .skills-card:hover {
   transform: translateY(-8px) scale(1.025);
-  box-shadow: 0 0 32px #00fff0, 0 0 48px #ff00ea;
+  box-shadow: 0 0 8px rgba(130, 73, 209, 0.4);
   z-index: 2;
 }
 
@@ -465,7 +471,7 @@ body, .app-bg {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   margin-bottom: 16px;
-  border-bottom: 2px solid #00fff0;
+  border-bottom: 2px solid #8249d1;
 }
 
 .project-card {
@@ -493,7 +499,7 @@ body, .app-bg {
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 32px #00fff0, 0 0 48px #ff00ea;
+  box-shadow: 0 0 8px rgba(130, 73, 209, 0.4);
   z-index: 2;
 }
 
@@ -518,14 +524,14 @@ body, .app-bg {
 .project-link {
   margin-top: auto;
   display: inline-block;
-  color: #4fd1c5;
+  color: #fff;
   text-decoration: underline;
   font-weight: 600;
   font-size: 1rem;
   transition: color 0.2s;
 }
 .project-link:hover {
-  color: #5f5fff;
+  color: #ccc;
   text-decoration: underline;
 }
 
@@ -540,12 +546,12 @@ body, .app-bg {
   justify-content: center;
 }
 .footer-contact a {
-  color: #ffb86b;
+  color: #fff;
   text-decoration: underline;
   transition: color 0.2s;
 }
 .footer-contact a:hover {
-  color: #ff6e6e;
+  color: #ccc;
 }
 @media (max-width: 700px) {
   .footer-contact {
@@ -580,8 +586,8 @@ body, .app-bg {
   transition: transform 0.22s, box-shadow 0.22s;
 }
 .exp-project-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 0 24px #00fff0, 0 0 32px #ff00ea;
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 0 8px rgba(130, 73, 209, 0.4);
   z-index: 2;
 }
 .exp-project-image {
@@ -589,14 +595,15 @@ body, .app-bg {
   height: 120px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-  border-bottom: 2px solid #00fff0;
+  border-bottom: 2px solid #8249d1;
   margin-bottom: 10px;
 }
 .exp-project-card h4 {
-  color: #00fff0;
+  color: #fff;
   font-size: 1.08rem;
   margin: 10px 0 0 0;
   padding: 0 16px;
+  font-family: 'Inter', sans-serif;
 }
 .exp-project-card ul {
   color: #e0e0e0;
@@ -635,12 +642,12 @@ body, .app-bg {
   transition: transform 0.22s, box-shadow 0.22s;
 }
 .cp-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 0 24px #00fff0, 0 0 32px #ff00ea;
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 0 8px rgba(130, 73, 209, 0.4);
   z-index: 2;
 }
 .cp-card-rating {
-  color: #ff00ea;
+  color: #fff;
   font-weight: 700;
   font-size: 1.08rem;
   margin: 4px 0 2px 0;
@@ -662,14 +669,14 @@ body, .app-bg {
 .cp-card-link {
   display: inline-block;
   margin-top: 10px;
-  color: #4fd1c5;
+  color: #fff;
   text-decoration: underline;
   font-weight: 600;
   font-size: 0.98rem;
   transition: color 0.2s;
 }
 .cp-card-link:hover {
-  color: #5f5fff;
+  color: #ccc;
 }
 @media (max-width: 1100px) {
   .cp-cards-grid {
@@ -699,7 +706,7 @@ body, .app-bg {
 .hamburger-bar {
   width: 26px;
   height: 3px;
-  background: #00fff0;
+  background: #8249d1;
   margin: 4px 0;
   border-radius: 2px;
   transition: all 0.3s;
@@ -766,7 +773,7 @@ body, .app-bg {
   align-items: flex-start;
 }
 .skills-badges-title {
-  color: #5f5fff;
+  color: #fff;
   font-size: 1.08rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -780,22 +787,22 @@ body, .app-bg {
 .skill-badge {
   display: inline-block;
   background: #181818;
-  color: #4fd1c5;
+  color: #fff;
   font-weight: 600;
   font-size: 0.98rem;
   border-radius: 18px;
   padding: 6px 16px;
   box-shadow: none;
-  border: 1.5px solid #4fd1c5;
-  transition: transform 0.18s, box-shadow 0.18s, background 0.18s, color 0.18s;
+  border: 1.5px solid #8249d1;
+  transition: transform 0.18s, background 0.18s, color 0.18s;
   cursor: default;
   user-select: none;
   opacity: 0.92;
 }
 .skill-badge:hover {
   transform: scale(1.08);
-  background: #4fd1c5;
-  color: #181818;
+  background: #8249d1;
+  color: #000;
   box-shadow: none;
   opacity: 1;
 }
@@ -833,8 +840,8 @@ body, .app-bg {
   height: 170px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #00fff0;
-  box-shadow: 0 0 18px #00fff033;
+  border: 3px solid #8249d1;
+  box-shadow: 0 0 18px rgba(130, 73, 209, 0.2);
 }
 .about-text-large {
   font-size: 1.32rem;
@@ -859,7 +866,7 @@ body, .app-bg {
 
 .about-side {
   background: none;
-  padding: 100px 0 80px 0;
+  padding: 0px 0 80px 0;
   max-width: 1200px;
   min-height: 60vh;
   display: flex;
@@ -880,7 +887,7 @@ body, .app-bg {
   height: 220px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #4fd1c5;
+  border: 4px solid #8249d1;
   box-shadow: none;
 }
 .about-text-side {
@@ -898,14 +905,16 @@ body, .app-bg {
   margin-bottom: 18px;
   line-height: 1.08;
   letter-spacing: 1.5px;
+  font-family: 'Inter', sans-serif;
+  color: #8249d1;
 }
 .about-typed {
   font-size: 2.1rem;
   font-weight: 700;
-  color: #00aaff;
+  color: #8249d1;
   margin-bottom: 18px;
   min-height: 2.5em;
-  font-family: 'Raleway', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -921,7 +930,7 @@ body, .app-bg {
 }
 .typed-cursor {
   display: inline-block;
-  color: #00aaff;
+  color: #8249d1;
   font-weight: 900;
   font-size: 1.1em;
   margin-left: 2px;
@@ -981,15 +990,18 @@ body, .app-bg {
   font-weight: 800;
   margin-bottom: 32px;
   min-height: 2.5em;
-  font-family: 'Raleway', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 1.2px;
   display: flex;
   align-items: center;
   max-width: 100%;
-  color: #b8c1ec;
+  color: #fff;
 }
 @media (max-width: 900px) {
   .about-typed-static {
     font-size: 1.2rem;
   }
-} 
+}
+
+/* Add Inter font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap'); 
